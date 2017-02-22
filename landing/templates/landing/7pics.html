@@ -1,0 +1,209 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>7pics - 7 Free HD Stock Photos every 7 days</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<link href="{% static 'landing/css/style.css' %}" rel="stylesheet"/>
+	<link href="{% static 'landing/css/style-picture.css' %}" rel="stylesheet"/> 
+	<link rel="stylesheet" href="{% static 'landing/css/contact.css' %}">	
+	<link rel="stylesheet" href="{% static 'landing/css/simple-line-icons.css' %}">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<style>
+		#wrapper{
+			background: url({% static 'landing/images/backgrounds/7pics.jpg' %}) no-repeat center center fixed;
+		}
+	</style>
+</head> 
+<body>
+
+<div id="wrapper">
+
+	<!-- Start Header -->
+
+	<div id="header">
+	
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+				
+					<div style="text-align:center;">
+						<img src="{% static 'landing/images/7pics-logo.png' %}" alt="7pics" />
+					</div>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+	
+	</div>
+
+	<!-- End Header -->
+
+	<!-- Start Content -->
+
+		<div class="container">
+				 
+            <div class="row">
+	        	
+	        	<div class="span6">
+	        	
+	        		<div class="inner">
+	        		
+	        			<div class="hero" style="text-shadow: 1px 1px 7px black;">
+	        		
+		        			<h1>7 Free HD Stock Photos Every 7 days</h1>
+							<h2>Join Now and receive every week stunning HD stock photos to use for free in your projects or wherever you want!</h2>
+						
+						<!--<a href="#name" class="btn btn-secondary">Let's get started</a>-->
+						
+						</div>
+
+	        			
+	        		</div>
+	        		
+	        	</div>
+	        	
+	        	<div class="span6">
+	        	
+	        		<div class="inner">
+	        		
+	        			<div class="form-box">
+	        			
+	        				<div class="top">
+		        			
+		        				<h2><span class="glyph-item  icon-pencil" aria-hidden="true"></span>Join 24,750+ subscribers now!</h2>
+		        				<p>Please complete the form</p>
+		        				
+	        				</div>
+	        			
+	        				<div class="bottom"> 
+
+								<div id="success">
+								    <span class="green textcenter">
+								        <p>You are now subscribed to 7pics!</p>
+								    </span>
+								</div>
+
+								<div id="error">
+								    <span>
+								        <p>Something went wrong. Please refresh and try again.</p>
+								    </span>
+								</div>
+
+								<form id="contact" name="contact" method="post" novalidate="novalidate">
+									{% csrf_token %}
+
+									<div class="form-row">
+								        <input type="text" name="name" id="name" size="30" value="" required="" class="text login_input"  placeholder="Your name">
+								    </div>
+									<div class="form-row">									     
+								        <input type="text" name="email" id="email" size="30" value="" required="" class="text login_input"  placeholder="Email Address">
+								    </div>
+									<div class="form-row" style="text-align: center;">									    
+								        <input id="submit" type="submit" name="submit" value="Sign up now!" style="cursor:pointer;" class="btn">
+								    </div>
+								    <input type="hidden" name="source" value="7pics" />
+								</form>								
+																
+							</div> 
+	        			
+	        			</div>
+	        			<div class="shadow"></div>
+	        			<div class="clearfix"></div>
+	        			
+	        		</div>
+	        		
+	        	</div>
+	        	
+            </div>  
+		
+		</div>
+	
+	<!-- End content -->	
+	
+	<div class="clearfix"></div> 
+	
+</div>
+
+<div class="strip features">
+
+	<div class="container">
+			 
+        <div class="row">
+	    	
+	    	<div class="span4">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-heart" aria-hidden="true"></span>
+	    	
+		        	<h3>Completely Free</h3>
+		        	
+		        	<p>Free as a <i>free hug</i>, enjoy it without any hidden charges.</p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span4">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-check" aria-hidden="true"></span>
+	    	
+		        	<h3>Total permissions</h3>
+		        	
+		        	<p>Use the photos everywhere. You have all rights to use them in your personal and commercial projects.</p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span4">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-fire" aria-hidden="true"></span>
+	    	
+		        	<h3>Every week</h3>
+		        	
+		        	<p>7 photos, 7 days. Every week you will receive 7 new handpicked HD stocks photos.</p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="clearfix"></div>
+	    	        	
+	    </div>
+
+	</div>
+
+</div>
+
+<div class="clearfix"></div> 
+
+<div id="footer">
+   	
+	Copyright &copy; 2017
+	
+	<div class="clearfix"></div>
+
+</div>
+
+<!--[if lte IE 7]><script src="js/icons-lte-ie7.js"></script><![endif]-->
+<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+<script src="{% static 'landing/js/respond.min.js' %}"></script>
+<script src="{% static 'landing/js/scripts.js' %}"></script>  
+<script src="{% static 'landing/js/jquery.form.js' %}"></script>
+<script src="{% static 'landing/js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'landing/js/contact.js' %}"></script>
+		        		
+</body>
+</html>

@@ -1,0 +1,86 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{{source}} - Thanks</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />  
+	<link href="{% static 'landing/css/style.css' %}" rel="stylesheet"/> 
+	<link href="{% static 'landing/css/style-picture.css' %}" rel="stylesheet"/> 
+	<!-- <link rel="stylesheet" href="{% static 'purehq/css/contact.css' %}"> -->
+	<link rel="stylesheet" href="{% static 'landing/css/simple-line-icons.css' %}">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<style>
+		#wrapper{
+			background: url(/static/landing/images/backgrounds/{{source}}.jpg) no-repeat center center fixed;
+		}
+	</style>
+</head> 
+<body>
+
+<div id="wrapper">
+
+	<!-- Start Header -->
+
+	<div id="header">
+	
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+				
+					<div style="text-align:center;">
+						<img src="/static/landing/images/{{source}}-logo.png" alt="{{source}}" />
+					</div>					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+	
+	</div>
+
+	<!-- End Header -->
+
+	<!-- Start Content -->
+
+		<div class="container">
+				 
+            <div class="row">
+	        	
+	        	<div class="span12" style="background:rgba(0,0,0,0.7)">
+	        	
+	        		<div class="inner">
+	        			<div class="hero" style="display:block">
+		        			<span style="color:white; font-size:50pt;" class="glyph-item mega icon-like" aria-hidden="true"></span>
+		        			<h1>Thank You For Signing Up!</h1>
+		        			<h2>You'll receive your first email shortly.</h2>
+	        			</div>
+	        		</div>
+	        		
+	        	</div>
+	        	
+            </div>  
+		
+		</div>
+	
+	<!-- End content -->	
+	
+	<div class="clearfix"></div> 
+	
+</div>
+
+<div class="clearfix"></div> 
+
+<div id="footer">
+   	
+	Copyright &copy; 2017
+	
+	<div class="clearfix"></div>
+
+</div>
+		        		
+</body>
+</html>

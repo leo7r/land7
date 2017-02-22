@@ -21,8 +21,8 @@ class Drip(models.Model):
 
 	name = models.CharField( max_length = 200 )
 	source = models.CharField( max_length = 500 )
-	subscribers = models.ManyToMany( Contact , null = True , blank = True , related_name = 'subscribers' )
-	unsubscribers = models.ManyToMany( Contact , null = True , blank = True , related_name = 'unsubscribers' )
+	subscribers = models.ManyToManyField( Contact , null = True , blank = True , related_name = 'subscribers' )
+	unsubscribers = models.ManyToManyField( Contact , null = True , blank = True , related_name = 'unsubscribers' )
 
 @python_2_unicode_compatible
 class Email(models.Model):

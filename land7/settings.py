@@ -123,5 +123,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/7landing/land7/static'#'/Users/leo/Desarrollo/Github/land7/static'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    #os.path.join(BASE_DIR, 'static'),
 )
